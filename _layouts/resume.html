@@ -28,7 +28,7 @@
 
         <div class="executive-summary" itemprop="description">
           <p>
-          I am currently employed as a DevOps Engineer at Webdam | Bynder.
+          I am currently employed as a DevOps Engineer at Bynder | Webdam.
 
           I am flexible, diligent, practical and motivated. I enjoy solving difficult problems and working in a productive team environment. 
           </p>
@@ -53,21 +53,24 @@
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Bynder</h3>
+          <h3 class="resume-item-title" itemprop="name">Bynder | Webdam</h3>
           <h4 class="resume-item-details" itemprop="description">DevOps Engineer &bull; Aug, 2018 &mdash; Present </h4>
           <p class="resume-item-copy"></p>
           <ul class="resume-item-list">
-            <li>Assisted with PHP 5.6 to PHP 7.2 upgrade</li>
-            <li>Assisted migrating infrastructure to support multiple regions</li>
-            <li>Manage infrastructure via CloudFormation</li>
-            <li>Manage configuration via Chef</li>
-            <li>Manage Jenkins</li>
+            <li>Lead PHP 7.2 upgrade team</li>
+            <li>Migrated infrastructure into multiple AWS regions</li>
+            <li>Maintain and write Chef recipes</li>
+            <li>Maintain and write CloudFormation templates</li>
+            <li>Maintain and write Python and Bash scripts for daily tasks</li>
+            <li>Automate SSL renewal and installation with CloudFront</li>
+            <li>Debug and fix production outages with minimal downtime</li>
+            <li>Work closely with developers to design and build new features</li>
           </ul>
         </div><!-- end of resume-item -->
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Webdam</h3>
+          <h3 class="resume-item-title" itemprop="name">Webdam, a Shutterstock Company</h3>
           <h4 class="resume-item-details" itemprop="description">Software Engineer &bull; Aug, 2013 &mdash; Aug, 2018 (5 years)</h4>
           <p class="resume-item-copy"></p>
           <ul class="resume-item-list">
@@ -87,23 +90,6 @@
 
       </section>
       <!-- end Experience -->
-      {% endif %}
-
-      {% if site.resume_section_education %}
-      <!-- begin Education -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
-
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">San Francisco State University</h3>
-          <h4 class="resume-item-details" itemprop="description">Bachelor of Science, Computer Science &bull; 2008 &mdash; 2013</h4>
-        </div>
-
-      </section>
-      <!-- end Education -->
       {% endif %}
 
       {% if site.resume_section_projects %}
@@ -133,27 +119,39 @@
         </header>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Advanced</h4>
-          <p class="resume-item-copy">PHP, MySQL, Apache Solr, AWS</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Intermediate</h4>
-          <p class="resume-item-copy">Python, Ruby, Bash, CentOS, JVM</p>
+          <h4 class="resume-item-details">Languages</h4>
+          <p class="resume-item-copy">PHP, Python, Ruby, Javascript, Java, Bash</p>
         </div>
 
         <div class="resume-item">
           <h4 class="resume-item-details">Tools</h4>
-          <p class="resume-item-copy">Chef, Terraform, GoCD, Jenkins, PHPUnit, Git, Github, ImageMagick, Jira, Serverless</p>
+          <p class="resume-item-copy">Apache Solr, MySQL, Chef, Jenkins, Git, CentOS, JVM, NewRelic, Sumo Logic, Prometheus, Docker, PagerDuty, Pingdom, ImageMagick</p>
         </div>
 
         <div class="resume-item">
           <h4 class="resume-item-details">AWS Services</h4>
-          <p class="resume-item-copy">CloudFormation, Redshift, EC2, Kinesis, IAM, Glacier, VPC, S3, SNS, Lambda, CloudFront, EFS, RDS, ElastiCache, Route53, CloudWatch, AWS Certificate Manager, AWS Config</p>
+          <p class="resume-item-copy">S3, CloudFront, EC2, SQS, SNS, ElastiCache, Redshift, RDS, Route53, Lambda, Kinesis, EFS, CloudFormation, Glacier, CloudWatch, Systems Manager, Certificate Manager</p>
         </div>
 
       </section>
       <!-- end Skills -->
+      {% endif %}
+
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">San Francisco State University</h3>
+          <h4 class="resume-item-details" itemprop="description">Bachelor of Science, Computer Science &bull; 2008 &mdash; 2013</h4>
+        </div>
+
+      </section>
+      <!-- end Education -->
       {% endif %}
 
       {% if site.resume_section_recognition %}
