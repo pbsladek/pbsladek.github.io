@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "false"
 resume_name:                    "Paul Baker Sladek"
-resume_title:                   "Lead DevOps Engineer"
+resume_title:                   "Sr. DevOps Engineer"
 resume_contact_email:
   "opsetc@icloud.com"
 
@@ -38,7 +38,7 @@ resume_social_links:
   resume_github_url:            "https://github.com/pbsladek"
   resume_twitter_url:           "http://twitter.com/pwbsladek"
   resume_linkedin_url:          "https://www.linkedin.com/in/pbsladek"
-  resume_website_url:           "https://pbsladek.github.io/blog/"
+  # resume_website_url:           "https://pbsladek.github.io/blog/"
 
 # Design settings
 resume_theme:                   default
